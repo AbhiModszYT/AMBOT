@@ -85,7 +85,7 @@ CmdHelp("hii").add_command(
 
 ![](https://www.gnu.org/graphics/gplv3-or-later.png)
 
-<h4 align="center">Copyright (C) 2022 <a href="https://github.com/AbhiModszYT">AbhiModszYT</a></h4>
+<h4 align="center">Copyright (C) 2023 <a href="https://github.com/AbhiModszYT">AbhiModszYT</a></h4>
 
 Project [HellBot](https://github.com/AbhiModszYT/AM) is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
