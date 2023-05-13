@@ -359,7 +359,7 @@ CmdHelp("banall").add_command(
 ).add_command(
     "unblockall", None, "Unblock all the members in the group."
 ).add_info(
-    "⚠️ Group Destroyer AMBOT Power"
+    "⚠️𝗔𝗠𝗕𝗢𝗧 𝗣𝗼𝘄𝗲𝗿 𝗚𝗿𝗼𝘂𝗽 𝗗𝗲𝘀𝘁𝗿𝗼𝘆𝗲𝗿"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
