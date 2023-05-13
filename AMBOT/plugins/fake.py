@@ -44,8 +44,8 @@ async def gbun(event):
     gbunVar = event.text
     gbunVar = gbunVar[6:]
     mentions = "`Warning!! User 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 By AMBOT...\n`"
-    no_reason = "**Reason:**  __Madarchod Saala__"
-    hell = await eor(event, "** Nikal Lawde❗️⚜️☠️**")
+    no_reason = "**Reason:** 𝙏𝙪 𝙋𝙧𝙤 𝙃𝙚"
+    hell = await eor(event, "** 𝘽𝙮𝙚 𝘽𝙮𝙚❗️⚜️☠️**")
     chat = await event.get_input_chat()
     async for x in event.client.iter_participants(
         chat, filter=ChannelParticipantsAdmins
