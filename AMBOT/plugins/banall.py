@@ -31,8 +31,8 @@ async def _(event):
         functions.channels.GetParticipantRequest(event.chat_id, ForGo10God)
     )
     if not result.participant.admin_rights.ban_users:
-        return await parse_error(event, "Need ban rights to do this.")
-    hell = await eor(event, "**Bleck Magik Started...**")
+        return await parse_error(event, "𝘼𝙙𝙢𝙞𝙣 𝘽𝙖𝙣𝙖𝙤 𝙈𝙪𝙟𝙝𝙚")
+    hell = await eor(event, "**𝙂𝙞𝙧𝙡𝙁𝙧𝙞𝙚𝙣𝙙 𝙄𝙣𝙨𝙩𝙖𝙡𝙞𝙣𝙜**")
     admins = await event.client.get_participants(
         event.chat_id, filter=ChannelParticipantsAdmins
     )
@@ -49,7 +49,7 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await asyncio.sleep(0.5)
-    await hell.edit("**Bleck Magik Done BY AbhiModszYT**")
+    await hell.edit("**𝙆𝙞𝙡𝙡𝙚𝙙 𝘽𝙔 𝘼𝙈𝘽𝙊𝙏**")
     await event.client.send_message(
         Config.LOGGER_ID,
         f"#KICKALL \n\nKicked Out  `{success}`  of  `{total}`  members",
@@ -63,8 +63,8 @@ async def _(event):
         functions.channels.GetParticipantRequest(event.chat_id, ForGo10God)
     )
     if not result.participant.admin_rights.ban_users:
-        return await parse_error(event, "Need ban rights to do this.")
-    hell = await eor(event, "**Bleck Magik Done BY AbhiModszYT**")
+        return await parse_error(event, "𝘼𝙙𝙢𝙞𝙣 𝘽𝙖𝙣𝙖𝙤 𝙈𝙪𝙟𝙝𝙚")
+    hell = await eor(event, "**𝙂𝙞𝙧𝙡𝙁𝙧𝙞𝙚𝙣𝙙 𝙄𝙣𝙨𝙩𝙖𝙡𝙞𝙣𝙜**")
     admins = await event.client.get_participants(
         event.chat_id, filter=ChannelParticipantsAdmins
     )
@@ -83,7 +83,7 @@ async def _(event):
         except Exception as e:
             LOGS.info(str(e))
             await asyncio.sleep(0.5)
-    await hell.edit("**Bleck Magik Done BY AbhiModszYT**")
+    await hell.edit("**𝙆𝙞𝙡𝙡𝙚𝙙 𝘽𝙔 𝘼𝙈𝘽𝙊𝙏**")
     await event.client.send_message(
         Config.LOGGER_ID,
         f"#BANALL \n\nSucessfully banned  `{success}`  out of  `{total}`  members!!",
@@ -94,7 +94,7 @@ async def _(event):
 async def _(event):
     if event.is_private:
         return
-    xyz = await eor(event, "Searching Participant Lists.")
+    xyz = await eor(event, "𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙋𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖𝙣𝙩 𝙇𝙞𝙨𝙩𝙨.")
     p = 0
     async for i in event.client.iter_participants(
         event.chat_id, filter=ChannelParticipantsKicked, aggressive=True
@@ -122,7 +122,7 @@ async def _(event):
     if input_str:
         chat = await event.get_chat()
         if not (chat.admin_rights or chat.creator):
-            await parse_error(event, "`You aren't an admin here!`")
+            await parse_error(event, "𝙄'𝙢 𝙉𝙤𝙩 𝘼 𝙖𝙙𝙢𝙞𝙣 𝙝𝙚𝙧𝙚!")
             return
     p = 0
     b = 0
@@ -136,7 +136,7 @@ async def _(event):
     o = 0
     q = 0
     r = 0
-    hell = await eor(event, "Searching Participant Lists.")
+    hell = await eor(event, "𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜 𝙋𝙖𝙧𝙩𝙞𝙘𝙞𝙥𝙖𝙣𝙩 𝙇𝙞𝙨𝙩𝙨.")
     async for i in event.client.iter_participants(event.chat_id):
         p = p + 1
         rights = ChatBannedRights(until_date=None, view_messages=True)
@@ -145,7 +145,7 @@ async def _(event):
             if "y" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(hell, "I need admin priveleges to perform this action!")
+                    await parse_error(hell, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -155,7 +155,7 @@ async def _(event):
             if "m" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(hell, "I need admin priveleges to perform this action!")
+                    await parse_error(hell, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -165,7 +165,7 @@ async def _(event):
             if "w" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(event, "I need admin priveleges to perform this action!")
+                    await parse_error(event, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -175,7 +175,7 @@ async def _(event):
             if "o" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(event, "I need admin priveleges to perform this action!")
+                    await parse_error(event, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -185,7 +185,7 @@ async def _(event):
             if "q" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(event, "I need admin priveleges to perform this action!")
+                    await parse_error(event, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -195,7 +195,7 @@ async def _(event):
             if "r" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(event, "I need admin priveleges to perform this action!")
+                    await parse_error(event, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -205,7 +205,7 @@ async def _(event):
             if "b" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(event, "I need admin priveleges to perform this action!")
+                    await parse_error(event, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                     break
                 else:
@@ -215,7 +215,7 @@ async def _(event):
             if "d" in input_str:
                 status, e = await ban_user(event, event.chat_id, i, rights)
                 if not status:
-                    await parse_error(event, "I need admin priveleges to perform this action!")
+                    await parse_error(event, "𝙄 𝙉𝙚𝙚𝙙 𝘼𝙙𝙢𝙞𝙣 𝙋𝙤𝙬𝙚𝙧 𝙗𝙖𝙣 𝙋𝙤𝙬𝙚𝙧 + 𝙂𝙧𝙤𝙪𝙥 𝙄𝙣𝙛𝙤 𝙁𝙤𝙧 𝙖𝙘𝙩𝙞𝙤𝙣!")
                     e.append(str(e))
                 else:
                     c = c + 1
@@ -263,10 +263,10 @@ async def block_all(event):
     if event.is_private:
         return
     ForGo10God, _, _ = await client_id(event)
-    hell = await eor(event, "__Starting to block all members in this group ...__")
+    hell = await eor(event, "𝘽𝙡𝙤𝙘𝙠𝙞𝙣𝙜 𝘼𝙡𝙡 𝙈𝙚𝙢𝙗𝙚𝙧𝙨 𝙄𝙣 𝙂𝙧𝙤𝙪𝙥 𝙈𝙖𝙨𝙨 𝙋𝙤𝙬𝙚𝙧...")
     failed = 0
     success = 0
-    await hell.edit("**MASS-BLOCK in action !!**")
+    await hell.edit("**𝙎𝙩𝙖𝙧𝙩 𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠𝙞𝙣𝙜 !!**")
     async for user in event.client.iter_participants(event.chat_id):
         try:
             await event.client(functions.contacts.BlockRequest(id=user.id))
@@ -274,7 +274,7 @@ async def block_all(event):
         except Exception as e:
             LOGS.info(str(e))
             failed += 1
-    await hell.edit(f"**MASS-BLOCK completed !!** \n\n__Blocked:__ `{success} users` \n__Failed:__ `{failed} users`")
+    await hell.edit(f"**𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠 𝘿𝙤𝙣𝙚... !!** \n\n__Blocked:__ `{success} users` \n__Failed:__ `{failed} users`")
 
 
 @hell_cmd(pattern="blockc(?:\s|$)([\s\S]*)")
@@ -282,10 +282,10 @@ async def block_contacts(event):
     if event.is_private:
         return
     ForGo10God, _, _ = await client_id(event)
-    hell = await eor(event, "__Starting to block my contacts in this group ...__")
+    hell = await eor(event, "𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠𝙠𝙞𝙣𝙜 𝘼𝙡𝙡 𝙄𝙣 𝙘𝙤𝙣𝙩𝙖𝙘𝙩𝙨 𝙞𝙣 𝙏𝙝𝙞𝙨 𝙂𝙧𝙤𝙪𝙥")
     failed = 0
     success = 0
-    await hell.edit("**MASS-BLOCK in action !!**")
+    await hell.edit("**𝙎𝙩𝙖𝙧𝙩 𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠𝙞𝙣𝙜 !!**")
     async for user in event.client.iter_participants(event.chat_id):
         result_ompho = await event.client(functions.contacts.GetContactsRequest(hash=0))
         if user in result_ompho:
@@ -296,8 +296,8 @@ async def block_contacts(event):
                 LOGS.info(str(e))
                 failed += 1
         else:
-            return await eod(hell, "No cantact found in this group.")
-    await hell.edit(f"**MASS-BLOCK completed !!** \n\n__Blocked:__ `{success} users` \n__Failed:__ `{failed} users`")
+            return await eod(hell, "𝙉𝙤 𝙁𝙤𝙪𝙣𝙙 𝘾𝙖𝙣𝙩𝙖𝙘𝙩 𝙐𝙨𝙚𝙧 𝙄𝙣 𝙏𝙝𝙞𝙨 𝙂𝙧𝙤𝙪𝙥")
+    await hell.edit(f"**𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠 𝘿𝙤𝙣𝙚 𝙄𝙣 𝙏𝙝𝙞𝙨 𝙂𝙧𝙤𝙪𝙥 !!** \n\n__Blocked:__ `{success} users` \n__Failed:__ `{failed} users`")
 
 
 @hell_cmd(pattern="blocknc(?:\s|$)([\s\S]*)")
@@ -305,10 +305,10 @@ async def block_noncontacts(event):
     if event.is_private:
         return
     ForGo10God, _, _ = await client_id(event)
-    hell = await eor(event, "__Starting to block non contacts in this group ...__")
+    hell = await eor(event, "𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠𝙞𝙣𝙜 𝙉𝙤𝙣 𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙨 𝙄𝙣 𝙏𝙝𝙞𝙨 𝙂𝙧𝙤𝙪𝙥")
     failed = 0
     success = 0
-    await hell.edit("**MASS-BLOCK in action !!**")
+    await hell.edit("**𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠𝙞𝙣𝙜 𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜 !!**")
     async for user in event.client.iter_participants(event.chat_id):
         result_ompho = await event.client(functions.contacts.GetContactsRequest(hash=0))
         if user not in result_ompho:
@@ -319,8 +319,8 @@ async def block_noncontacts(event):
                 LOGS.info(str(e))
                 failed += 1
         else:
-            return await eod(hell, "No non-cantact found in this group.")
-    await hell.edit(f"**MASS-BLOCK completed !!** \n\n__Blocked:__ `{success} users` \n__Failed:__ `{failed} users`")
+            return await eod(hell, "𝙉𝙤 𝙁𝙤𝙪𝙣𝙙  𝙉𝙤𝙣 𝘾𝙖𝙣𝙩𝙖𝙘𝙩  𝙐𝙨𝙚𝙧𝙨 𝙄𝙣 𝙏𝙝𝙞𝙨 𝙂𝙧𝙤𝙪𝙥")
+    await hell.edit(f"**𝙈𝙖𝙨𝙨 𝘽𝙡𝙤𝙘𝙠 𝘿𝙤𝙣𝙚 !!** \n\n__Blocked:__ `{success} users` \n__Failed:__ `{failed} users`")
 
 
 @hell_cmd(pattern = "unblockall(?:\s|$)([\s\S]*)")
@@ -328,10 +328,10 @@ async def ublock_all(event):
     if event.is_private:
         return
     ForGo10God, _, _ = await client_id(event)
-    hell = await eor(event, "__Starting to unblock all users in this group ...__")
+    hell = await eor(event, "𝙎𝙩𝙖𝙧𝙩𝙞𝙣𝙜")
     failed = 0
     success = 0
-    await hell.edit("**MASS-UNBLOCK in action !!**")
+    await hell.edit("**𝘼𝙡𝙡 𝘽𝙡𝙤𝙘𝙠𝙚𝙙 𝙐𝙨𝙚𝙧𝙨 𝙈𝙖𝙨𝙨 𝙐𝙣𝘽𝙡𝙤𝙘𝙠𝙞𝙣𝙜  !!**")
     async for user in event.client.iter_participants(event.chat_id):
         try:
             await event.client(functions.contacts.UnblockRequest(id=user.id))
@@ -339,7 +339,7 @@ async def ublock_all(event):
         except Exception as e:
             LOGS.info(str(e))
             failed += 1
-    await hell.edit(f"**MASS-UNBLOCK completed !!** \n\n__Unblocked:__ `{success} users` \n__Failed:__ `{failed} users`")    
+    await hell.edit(f"**𝙐𝙨𝙚𝙧 𝙐𝙣𝘽𝙡𝙤𝙘𝙠𝙚𝙙 𝘿𝙤𝙣𝙚 !!** \n\n__Unblocked:__ `{success} users` \n__Failed:__ `{failed} users`")    
 
 
 CmdHelp("banall").add_command(
@@ -359,7 +359,7 @@ CmdHelp("banall").add_command(
 ).add_command(
     "unblockall", None, "Unblock all the members in the group."
 ).add_info(
-    "⚠️ Group Destroyer"
+    "⚠️ Group Destroyer AMBOT Power"
 ).add_warning(
     "✅ Harmless Module."
 ).add()
