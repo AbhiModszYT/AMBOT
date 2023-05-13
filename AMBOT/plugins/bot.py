@@ -144,7 +144,7 @@ async def _(event):
             chat_id = await get_user_id(event, lists[1])
             to_send = lists[2]
             await event.client.send_message(chat_id, to_send)
-            await eod(event, "**[Done]**")
+            await eod(event, "**𝗗𝗺 𝗗𝗲𝗸𝗵𝗼**")
         except Exception as e:
             return await parse_error(event, e)
     
