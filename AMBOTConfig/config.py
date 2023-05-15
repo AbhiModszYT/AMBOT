@@ -28,7 +28,7 @@ class Config(object):
     LOGGER_ID = int(os.environ.get("LOGGER_ID", 0))
     LYRICS_API = os.environ.get("LYRICS_API", None)
     MAX_SPAM = int(os.environ.get("MAX_SPAM", 3))
-    MY_CHANNEL = os.environ.get("YOUR_CHANNEL", "AbhiModszYT_Return")
+    MY_CHANNEL = os.environ.get("YOUR_CHANNEL", "AmBotYT")
     MY_GROUP = os.environ.get("YOUR_GROUP", "AM_YTSupport")
     OCR_API = os.environ.get("OCR_API", "K84919685288957")
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", 0))
