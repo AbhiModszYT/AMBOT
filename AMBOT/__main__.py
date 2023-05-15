@@ -73,7 +73,7 @@ async def start_hellbot():
         await plug_load("AMBOT/plugins/*.py")
         await plug_channel(Hell, Config.PLUGIN_CHANNEL)
         LOGS.info("⚡Your AMBOT Is Now Working⚡")
-        LOGS.info("Head to @AbhiModszYT_Return for Updates. Also join chat group to get help regarding AMBOT.")
+        LOGS.info("Head to @AmBotYT for Updates. Also join chat group to get help regarding AMBOT.")
         LOGS.info(f"» Total Clients = {str(total)} «")
         await hell_is_on(total)
     except Exception as e:
